@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+
+
+    <div id="newsletterPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-text">
+                <span class="close-btn" onclick="closePopup()"><img src="images/x.png" alt=""></span>
+                <h2>Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua</p>
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+                <div class="dont-show">
+                    <input type="checkbox" id="dontShowAgain">
+                    <label for="dontShowAgain">Don’t show this popup again</label>
+                </div>
+            </div>
+
+            <div class="popup-image"><img src="images/img66.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="nav">
+        <div class="lang">
+            <select class="language">
+                <option selected>EN</option>
+                <option>AR</option>
+            </select>
+            <select class="language">
+                <option selected>USD</option>
+                <option>EGP</option>
+                <option>EUR</option>
+
+            </select>
+        </div>
+        <div class="profile">
+            <img src="images/Vector.png" alt="">
+            <p>My profile</p>
+            <img src="images/bag_3.png" alt="">
+            <p>0 Items <span>$0.00</span></p>
+            <div class="search-container">
+                <input type="checkbox" id="searchToggle" class="search-checkbox">
+                <label for="searchToggle" class="search-label">
+                    <img src="images/search-icon.png">
+                </label>
+                <input type="search" class="search-input" placeholder="search...">
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="space">
+
+
+
+
+    <div class="main">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-start">
+                            <h2>iPhone x</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy.</p>
+                            <a href="#" class="link-light">MORE</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/iphonex_spacegray.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-start">
+                            <h2>iPhone Mini</h2>
+                            <p>Performance and design. Taken right to the edge.</p>
+                            <a href="#" class="link-light">MORE</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/slider1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-start">
+                            <h2>iPhone Pro</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#" class="link-light">MORE</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/slider2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- <div class="BEST_SELLER">
+        <h2>
+            BEST SELLER
+        </h2>
+        <div class="SELLER">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All"
+                        type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac" type="button"
+                        role="tab">Mac</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="iphone-tab" data-bs-toggle="tab" data-bs-target="#iphone" type="button"
+                        role="tab">iPhone</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="ipad-tab" data-bs-toggle="tab" data-bs-target="#ipad" type="button"
+                        role="tab">iPad</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="ipod-tab" data-bs-toggle="tab" data-bs-target="#ipod" type="button"
+                        role="tab">iPod</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="Accessories-tab" data-bs-toggle="tab" data-bs-target="#Accessories"
+                        type="button" role="tab">Accessories</button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="All">
+                    <div class="main5">
+
+                        <div class="hotspase">
+                            <p class="hot">HOT</p>
+                            <img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mac">
+                <div class="main5">
+
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="iphone">
+                <div class="main5">
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="ipad">
+                <div class="main5">
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ipod">
+                <div class="main5">
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Accessories">
+                <div class="main5">
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+                    <div><img src="images/mack.png" alt="" class="img1">
+                        <hr>
+                        <p>Apple Macbook Pro</p>
+                        <img src="images/rate.png" alt="">
+                        <p>$499 <del>$599</del></p>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" id="loadMore" class="load-more">LOAD MORE</a>
+        </div>
+    </div> -->
+
+
+    <div class="BEST_SELLER">
+        <h2>
+            BEST SELLER
+        </h2>
+        <div class="SELLER">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All"
+                        type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac" type="button"
+                        role="tab">Mac</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="iphone-tab" data-bs-toggle="tab" data-bs-target="#iphone" type="button"
+                        role="tab">iPhone</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="ipad-tab" data-bs-toggle="tab" data-bs-target="#ipad" type="button"
+                        role="tab">ipad</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="ipod-tab" data-bs-toggle="tab" data-bs-target="#ipod" type="button"
+                        role="tab">ipod</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="Accessories-tab" data-bs-toggle="tab" data-bs-target="#Accessories"
+                        type="button" role="tab">Accessories</button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="All">
+                    <div class="main5">
+                        
+                        <div class="hotspase">
+                            <p class="hot">HOT</p><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="mac">
+                    <div class="main5">
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="iphone">
+                    <div class="main5">
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ipad">
+                    <div class="main5">
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ipod">
+                    <div class="main5">
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Accessories">
+                    <div class="main5">
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                        <div><img src="images/mack.png" alt="" class="img1">
+                            <hr>
+                            <p>Apple Macbook Pro</p>
+                            <img src="images/rate.png" alt="">
+                            <p class="price">$499 <del>$599</del></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div class="main1">
+            <div>
+                <h2>iPhone 6 Plus</h2>
+                <p>Performance and design. Taken right to the edge.</p>
+                <a href="#" class="link-light">SHOP NOW</a>
+            </div>
+            <div>
+                <img src="images/pic.png" alt="">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="main3">
+            <div>
+                <img src="images/shipping.png" class="img1">
+                <h3>FREE SHIPPING</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor minim veniam, quis
+                    nostrud
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+            <div>
+                <img src="images/Group 12.png" class="img2">
+                <h3>100% REFUND</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor minim veniam, quis
+                    nostrud
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+            <div>
+                <img src="images/support.png" class="img3">
+                <h3>SUPPORT 24/7</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor minim veniam, quis
+                    nostrud
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+        </div>
+        <div class="LATEST_NEWS">
+            <h2>LATEST NEWS</h2>
+
+            <div class="main2">
+                <div class="m">
+                    <img src="images/Rectangle1.png" alt="">
+                    <div>
+                        <h6>01 Jan, 2015</h6>
+                        <h4>Typesetting industry</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="m">
+                    <img src="images/rectangle2.png" alt="">
+                    <div>
+                        <h6>01 Jan, 2015</h6>
+                        <h4>Typesetting industry</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="m">
+                    <img src="images/Rectangle3.png" alt="">
+                    <div>
+                        <h6>01 Jan, 2015</h6>
+                        <h4>Typesetting industry</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="FEATURED_PRODUCTS">
+            <h2>FEATURED PRODUCTS</h2>
+
+            <div class="main4">
+                <div class="m">
+                    <img src="images/Rectangle5.png" alt="" class="img5">
+                    <div>
+                        <h5>Beats Solo 2 On Ear
+                            Headphones - Black</h5>
+                        <img src="images/rate.png">
+                        <p class="price">$499 <del>$599</del></p>
+                    </div>
+                </div>
+                <div class="m">
+                    <img src="images/PR-104-0015-002-8A.png" alt="" class="img5">
+                    <div>
+                        <h5>H-Squared tvTray</h5>
+                        <img src="images/rate.png">
+                        <p class="price">$499 <del>$599</del></p>
+                    </div>
+                </div>
+                <div class="m">
+                    <img src="images/50050995_530579 (1).png" alt="" class="img5">
+                    <div>
+                        <h5>Netatmo Rain Gauge</h5>
+                        <img src="images/rate.png">
+                        <p class="price">$499 <del>$599</del></p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search query...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+        <footer>
+            <div class="footer1">
+                <div>
+                    <img src="images/logo.png" class="logo">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                </div>
+                <div class="followUs">
+                    <h3>Follow Us</h3>
+                    <p>Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    <img src="images/facebook.png">
+                    <img src="images/twitter.png">
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>My Company , 4578 Marmora Road, Glasgow <br>
+                        D04 89GR <br>
+                        Call us now: 0123-456-789 <br>
+                        Email: support@whatever.com</p>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="footer2">
+                <div>
+                    <h4>Infomation</h4>
+                    <p>About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+                <div>
+                    <h4> Service</h4>
+                    <p>About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+                <div>
+                    <h4>Extras</h4>
+                    <p>
+                        About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+                <div>
+                    <h4>My Account</h4>
+                    <p>
+                        About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+                <div>
+                    <h4>Userful Links</h4>
+                    <p>
+                        About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+                <div>
+                    <h4>Our Offers</h4>
+                    <p>
+                        About Us <br>
+                        Infomation <br>
+                        Privacy Policy <br>
+                        Terms & Conditions</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="footer3">
+                <div>© 2018 Ecommerce theme by www.bisenbaev.com</div>
+                <div><img src="images/Brands.png" alt=""></div>
+            </div>
+        </footer>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+                if (!localStorage.getItem("popupDisabled")) {
+                    document.getElementById("newsletterPopup").style.display = "block";
+                }
+            });
+
+            function closePopup() {
+                if (document.getElementById("dontShowAgain").checked) {
+                    localStorage.setItem("popupDisabled", "true");
+                }
+                document.getElementById("newsletterPopup").style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>
